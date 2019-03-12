@@ -1,0 +1,42 @@
+body{
+  width: 100vw;
+  height: 100vw;
+  background-color: white;
+}
+
+.title{
+  font-family: Georgia;
+  font-size: 8vw;
+  position: absolute;
+  text-align: center;
+  top: 13vw;
+  left: 21vw;
+  width: 53vw;
+  /* background-color: blue; */
+
+}
+
+.instructions{
+  font-family: Avenir;
+  font-size: 2vw;
+  position: absolute;
+  text-align: center;
+  top: 24vw;
+  left: 22.5vw;
+  width: 50vw;
+}
+
+.play{
+  font-family: Avenir;
+  font-size: 2vw;
+  color: black;
+  position: absolute;
+  text-align: center;
+  top: 34vw;
+  left: 22.5vw;
+  width: 50vw;
+}
+
+a{
+  color: black;
+}
