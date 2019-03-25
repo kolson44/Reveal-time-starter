@@ -92,9 +92,9 @@ socket.on('count', function(timeleft) {
 //change the cell color based on the keypress (based ont the team choice)
 $(window).on('keyup',function(eventData){
 
-  console.log(eventData.key)
-  //if this is the spacebar...
-    if (eventData.charCode == 32) {
+
+  //if this is the enter...
+    if (eventData.charCode == 13) {
 
       let randomNum = Math.round(Math.random() * 205 + 1)
 
