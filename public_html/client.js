@@ -98,7 +98,6 @@ $(window).on('keyup',function(eventData){
     if (eventData.key == 'enter') {
 
       console.log('enter')
-    }
 
       let randomNum = Math.round(Math.random() * 205 + 1)
 
