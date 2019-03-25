@@ -7,14 +7,14 @@ let pinkPoints = 0;
 
 
 //choose a team
-let teamGen = Math.floor(Math.random() * 3)
+let teamGen = Math.floor(Math.random() * 100)
 console.log(teamGen)
 
-if (teamGen == 0) {
+if (teamGen <= 45) {
   team = 'pink'
-} else if (teamGen == 1) {
+} else if (teamGen > 45 && teamGen >= 90) {
   team = 'blue'
-} else if (teamGen == 2) {
+} else if (teamGen > 90) {
   team = 'white'
 }
 
@@ -33,7 +33,7 @@ if (team === 'blue') {
 
 
 } else if (team === 'white') {
-  $('.team1').text('TEAM WHITE')
+  $('.team1').text('TEAM ERASE')
   $('body').css('background-color', 'white')
   $('.team1').css('color', 'black')
   $('.timer').css('color', 'black')
@@ -79,7 +79,7 @@ socket.on('count', function(timeleft) {
   } //close the 30 second check.
 
   if(timeleft < 0){
-    $("#countdown").text('Game is Finished! Waiting for the next round!')
+    $("#countdown").text('Game is Finished!  Waiting for the next round!')
   }
 
   if (timeleft == -15) {
@@ -90,42 +90,71 @@ socket.on('count', function(timeleft) {
 
 
 //change the cell color based on the keypress (based ont the team choice)
-$(window).on('keypress', function(eventData) {
+$(window).on('keyup',function(eventData){
+
+  console.log(eventData.key)
   //if this is the spacebar...
-  if (eventData.charCode == 32) {
+    if (eventData.charCode == 32) {
 
-    let randomNum = Math.round(Math.random() * 205 + 1)
+      let randomNum = Math.round(Math.random() * 205 + 1)
 
-    if (team === 'blue') {
+      if (team === 'blue') {
 
-      socket.emit('colorchange', {
-        'team': 'blue',
-        'cellToChange': '.item' + randomNum
-      })
+        socket.emit('colorchange', {
+          'team': 'blue',
+          'cellToChange': '.item' + randomNum
+        })
 
-      // $('.item'+randomNum).css('background-color', 'blue').addClass('blue')
+        // $('.item'+randomNum).css('background-color', 'blue').addClass('blue')
 
 
-    } else if (team === 'pink') {
-      socket.emit('colorchange', {
-        'team': 'pink',
-        'cellToChange': '.item' + randomNum
-      })
+      } else if (team === 'pink') {
+        socket.emit('colorchange', {
+          'team': 'pink',
+          'cellToChange': '.item' + randomNum
+        })
 
-      // $('.item'+randomNum).css('background-color', 'pink').addClass('pink')
+        // $('.item'+randomNum).css('background-color', 'pink').addClass('pink')
 
-    } else if (team === 'white') {
-      socket.emit('colorchange', {
-        'team': 'white',
-        'cellToChange': '.item' + randomNum
-      })
+      } else if (team === 'white') {
+        socket.emit('colorchange', {
+          'team': 'white',
+          'cellToChange': '.item' + randomNum
+        })
 
-      // $('.item'+randomNum).css('background-color', 'white').addClass('white')
+        // $('.item'+randomNum).css('background-color', 'white').addClass('white')
+
+      }
 
     }
+  })
 
-  }
-})
+
+// $(window).on('keyup',function(eventData){
+//
+//
+//   console.log(eventData.key)
+//
+//     if( eventData.key == ' '){
+//
+//       console.log('space?')
+//     }
+//
+//   })
+
+  // $(window).on('keypress', function(eventData) {
+  //   //if this is the spacebar...
+  //   if (eventData.charCode == 32) {
+  //
+  //     let randomNum = Math.round(Math.random() * 205 + 1)
+  //
+  //     if (team === 'blue') {
+  //
+  //       socket.emit('colorchange', {
+  //         'team': 'blue',
+  //         'cellToChange': '.item' + randomNum
+  //       })
+
 
 
 

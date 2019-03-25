@@ -68,23 +68,26 @@ body{
 .timer{
   font-family: Avenir;
   color: white;
-  font-size: 2.5vw;
+  font-size: 2vw;
   position: absolute;
   list-style-type: none;
+  text-align: right;
   padding: 1px;
-  top: 3.5vw;
-  left: 87.5vw;
-  width: 10vw;
+  top: 2vw;
+  left: 71vw;
+  width: 24vw;
 }
+
+
 
 /* FINISH BOX */
 .results{
   display: none;
   background-color: white;
-  width: 35vw;
+  width: 25vw;
   height: 18vw;
   position: absolute;
-  left: 31.9vw;
+  left: 38vw;
   top: 13vw;
   grid-template-columns: 5vw 5vw 5vw;
 }
