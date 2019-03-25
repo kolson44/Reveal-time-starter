@@ -101,7 +101,7 @@ $(window).on('keyup',function(eventData){
 
       let randomNum = Math.round(Math.random() * 205 + 1)
 
-      if (team === 'blue') {
+    }if (team === 'blue') {
 
         socket.emit('colorchange', {
           'team': 'blue',
