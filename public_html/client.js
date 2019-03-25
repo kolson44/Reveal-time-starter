@@ -95,9 +95,10 @@ $(window).on('keyup',function(eventData){
   console.log(eventData.key)
 
   //if this is the enter...
-    if (eventData.key == '13') {
+    if (eventData.key == 'enter') {
 
       console.log('enter')
+    }
 
       let randomNum = Math.round(Math.random() * 205 + 1)
 
