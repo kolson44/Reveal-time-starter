@@ -95,13 +95,13 @@ $(window).on('keyup',function(eventData){
   console.log(eventData.key)
 
   //if this is the enter...
-    if (eventData.key == 'h') {
+    if (eventData.key == 'Enter') {
 
-      console.log('h')
+      console.log('Enter')
 
       let randomNum = Math.round(Math.random() * 205 + 1)
 
-    }if (team === 'blue') {
+    if (team === 'blue') {
 
         socket.emit('colorchange', {
           'team': 'blue',
