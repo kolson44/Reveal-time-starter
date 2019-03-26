@@ -57,6 +57,6 @@ var downloadTimer = setInterval(function(){
 let port = process.env.PORT || 3000 ;
 
 //turn on our server so it can recieve request.
-server.listen(3000, function(){
+server.listen( port , function(){
   console.log('app is listening on port 3000!');
 })
