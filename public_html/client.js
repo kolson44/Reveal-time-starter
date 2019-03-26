@@ -12,7 +12,7 @@ console.log(teamGen)
 
 if (teamGen <= 45) {
   team = 'pink'
-} else if (teamGen > 45 && teamGen >= 90) {
+} else if (teamGen > 45 && teamGen <= 90) {
   team = 'blue'
 } else if (teamGen > 90) {
   team = 'white'
