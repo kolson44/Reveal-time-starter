@@ -54,7 +54,7 @@ var downloadTimer = setInterval(function(){
 }, 1000); //every second
 
 
-
+let port = process.env.PORT || 3000 ;
 
 //turn on our server so it can recieve request.
 server.listen(3000, function(){
