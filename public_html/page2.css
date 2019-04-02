@@ -18,7 +18,7 @@ body{
   width: 91.4vw;
   height: 35.74vw;
   position: absolute;
-  left: 3.7vw;
+  left: 3.5vw;
   top: 8vw;
   grid-template-columns: 5vw 5vw 5vw;
 }
@@ -39,7 +39,6 @@ body{
   display: grid;
   grid-gap: .2vw;
   justify-content: center;
-  border: 1px solid gray;
   /* outline: 1vw;
   outline-color: red; */
 
