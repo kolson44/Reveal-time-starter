@@ -43,9 +43,9 @@ body{
   outline-color: red; */
 
 
-  grid-template-columns: 4.5vw [main-start] repeat(21, 4.5vw) [main-end] 4.5vw;
+  grid-template-columns: 2vw [main-start] repeat(21, 2vw) [main-end] 2vw;
 
-  grid-template-rows: 4.5vw [main-start] repeat(9, 4.5vw) [main-end] 4.5vw;
+  grid-template-rows: 2vw [main-start] repeat(9, 2vw) [main-end] 2vw;
 }
 
   [class^="item"] {
