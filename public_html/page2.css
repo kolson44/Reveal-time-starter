@@ -50,8 +50,8 @@ body{
 
   [class^="item"] {
     background-color: white;
-    outline-color: black;
-    outline: .5px;
+    outline-color: gray;
+    outline: .2px;
     outline: solid;
 }
 
