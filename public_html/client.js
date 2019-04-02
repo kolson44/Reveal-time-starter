@@ -170,7 +170,7 @@ socket.on('resultColorChange', function(incomingColorData) {
   } else if (incomingColorData.team == 'pink') {
     $(incomingColorData.cellToChange).css('background-color', 'pink').removeClass('blue').removeClass('white').addClass('pink')
   } else if (incomingColorData.team == 'white') {
-    $(incomingColorData.cellToChange).css('background-color', 'white')removeClass('blue').removeClass('pink').addClass('white')
+    $(incomingColorData.cellToChange).css('background-color', 'white').removeClass('blue').removeClass('pink').addClass('white')
 
   }
 
