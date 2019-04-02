@@ -42,9 +42,9 @@ body{
   outline-color: red;
 
 
-  grid-template-columns: 50vw [main-start] repeat(21, 50vw) [main-end] 50vw;
+  grid-template-columns: 1vw [main-start] repeat(21, 1vw) [main-end] 1vw;
 
-  grid-template-rows: 50vw [main-start] repeat(9, 50vw) [main-end] 50vw;
+  grid-template-rows: 1vw [main-start] repeat(9, 1vw) [main-end] 1vw;
 }
 
   [class^="item"] {
