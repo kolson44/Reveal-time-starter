@@ -52,6 +52,7 @@ body{
     background-color: white;
     outline-color: black;
     outline: .5px;
+    outline: solid;
 }
 
 }
