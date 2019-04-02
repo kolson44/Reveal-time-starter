@@ -39,8 +39,9 @@ body{
   display: grid;
   grid-gap: .2vw;
   justify-content: center;
-  outline: 1vw;
-  outline-color: red;
+  border: 1px solid gray;
+  /* outline: 1vw;
+  outline-color: red; */
 
 
   grid-template-columns: 3.8vw [main-start] repeat(21, 3.8vw) [main-end] 3.8vw;
