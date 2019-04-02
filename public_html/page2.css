@@ -37,12 +37,12 @@ body{
 
 .grid {
   display: grid;
-  grid-gap: 1vw;
+  grid-gap: .2vw;
   justify-content: center;
   outline-color: red;
 
 
-  grid-template-columns: 50px [main-start] repeat(21, 50px) [main-end] 50px;
+  grid-template-columns: 50vw [main-start] repeat(21, 50px) [main-end] 50vw;
 
   grid-template-rows: 50px [main-start] repeat(9, 50px) [main-end] 50px;
 }
