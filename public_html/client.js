@@ -166,11 +166,11 @@ $(window).on('keyup',function(eventData){
 socket.on('resultColorChange', function(incomingColorData) {
 
   if (incomingColorData.team == 'blue') {
-    $(incomingColorData.cellToChange).css('background-color', 'blue').addClass('blue')
+    $(incomingColorData.cellToChange).css('background-color', 'blue').removeClass('pink').removeClass('white').addClass('blue')
   } else if (incomingColorData.team == 'pink') {
-    $(incomingColorData.cellToChange).css('background-color', 'pink').addClass('pink')
+    $(incomingColorData.cellToChange).css('background-color', 'pink').removeClass('blue').removeClass('white').addClass('pink')
   } else if (incomingColorData.team == 'white') {
-    $(incomingColorData.cellToChange).css('background-color', 'white').addClass('white')
+    $(incomingColorData.cellToChange).css('background-color', 'white')removeClass('blue').removeClass('pink').addClass('white')
 
   }
 
