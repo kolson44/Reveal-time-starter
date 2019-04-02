@@ -43,16 +43,16 @@ body{
   outline-color: red; */
 
 
-  grid-template-columns: 2vw [main-start] repeat(21, 2vw) [main-end] 2vw;
+  grid-template-columns: 3.96vw [main-start] repeat(21, 3.96vw) [main-end] 3.96vw;
 
-  grid-template-rows: 2vw [main-start] repeat(9, 2vw) [main-end] 2vw;
+  grid-template-rows: 3.96vw [main-start] repeat(9, 3.96vw) [main-end] 3.96vw;
 }
 
   [class^="item"] {
     background-color: white;
-    outline-color: yellow;
     outline: .2px;
     outline: solid;
+    outline-color: gray;
 }
 
 }
