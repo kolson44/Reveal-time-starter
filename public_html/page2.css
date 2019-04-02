@@ -15,12 +15,12 @@ body{
 
 .container{
   /* background-color: gray; */
-  width: 91.4vw;
+  /* width: 91.4vw;
   height: 35.74vw;
   position: absolute;
   left: 3.7vw;
   top: 8vw;
-  grid-template-columns: 5vw 5vw 5vw;
+  grid-template-columns: 5vw 5vw 5vw; */
 }
 
 .team1{
