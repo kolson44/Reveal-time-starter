@@ -39,7 +39,7 @@ body{
   display: grid;
   grid-gap: 1px;
   justify-content: center;
-  border: 1px solid;
+  outline: 4px dotted #e73;
 
 
   grid-template-columns: 50px [main-start] repeat(21, 50px) [main-end] 50px;
