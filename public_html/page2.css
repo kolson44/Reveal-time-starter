@@ -39,7 +39,7 @@ body{
   display: grid;
   grid-gap: 1px;
   justify-content: center;
-  outline-color: gray;
+  outline-color: red;
 
 
   grid-template-columns: 50px [main-start] repeat(21, 50px) [main-end] 50px;
