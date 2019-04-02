@@ -37,7 +37,7 @@ body{
 
 .grid {
   display: grid;
-  grid-gap: 1px;
+  grid-gap: 1vw;
   justify-content: center;
   outline-color: red;
 
