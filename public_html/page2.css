@@ -43,14 +43,14 @@ body{
   outline-color: red; */
 
 
-  grid-template-columns: 5vw [main-start] repeat(21, 5vw) [main-end] 5vw;
+  grid-template-columns: 4.5vw [main-start] repeat(21, 4.5vw) [main-end] 4.5vw;
 
-  grid-template-rows: 5vw [main-start] repeat(9, 5vw) [main-end] 5vw;
+  grid-template-rows: 4.5vw [main-start] repeat(9, 4.5vw) [main-end] 4.5vw;
 }
 
   [class^="item"] {
     background-color: white;
-    outline-color: pink;
+    outline-color: yellow;
     outline: .2px;
     outline: solid;
 }
