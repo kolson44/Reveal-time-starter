@@ -29,7 +29,7 @@ if (team === 'blue') {
 
 } else if (team === 'pink') {
   $('.team1').text('TEAM PINK')
-  $('body').css('background-color', 'pink')
+  $('body').css('background-color', 'green')
 
 
 } else if (team === 'white') {
@@ -104,7 +104,7 @@ $(window).on('keyup',function(eventData){
     if (team === 'blue') {
 
         socket.emit('colorchange', {
-          'team': 'purple',
+          'team': 'blue',
           'cellToChange': '.item' + randomNum
         })
 
@@ -113,7 +113,7 @@ $(window).on('keyup',function(eventData){
 
       } else if (team === 'pink') {
         socket.emit('colorchange', {
-          'team': 'yellow',
+          'team': 'pink',
           'cellToChange': '.item' + randomNum
         })
 
