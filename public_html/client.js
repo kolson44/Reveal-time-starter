@@ -113,7 +113,7 @@ $(window).on('keyup',function(eventData){
 
       } else if (team === 'pink') {
         socket.emit('colorchange', {
-          'team': 'pink',
+          'team': 'yellow',
           'cellToChange': '.item' + randomNum
         })
 
