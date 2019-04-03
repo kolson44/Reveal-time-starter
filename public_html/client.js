@@ -27,7 +27,7 @@ if (team === 'blue') {
   $('body').css('background-color', 0, 191, 255)
 
 
-} else if (team === 'green') {
+} else if (team === 'pink') {
   $('.team1').text('TEAM PINK')
   $('body').css('background-color', 'green')
 
@@ -113,7 +113,7 @@ $(window).on('keyup',function(eventData){
 
       } else if (team === 'pink') {
         socket.emit('colorchange', {
-          'team': 'pink',
+          'team': 'green',
           'cellToChange': '.item' + randomNum
         })
 
