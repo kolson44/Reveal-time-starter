@@ -29,7 +29,7 @@ if (team === 'blue') {
 
 } else if (team === 'pink') {
   $('.team1').text('TEAM PINK')
-  $('body').css('background-color', 'green')
+  $('body').css('background-color', 'pink')
 
 
 } else if (team === 'white') {
