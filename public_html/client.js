@@ -27,7 +27,7 @@ if (team === 'blue') {
   $('body').css('background-color', 0, 191, 255)
 
 
-} else if (team === 'pink') {
+} else if (team === 'green') {
   $('.team1').text('TEAM PINK')
   $('body').css('background-color', 'green')
 
