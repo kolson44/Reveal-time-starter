@@ -104,7 +104,7 @@ $(window).on('keyup',function(eventData){
     if (team === 'blue') {
 
         socket.emit('colorchange', {
-          'team': 'blue',
+          'team': 'purple',
           'cellToChange': '.item' + randomNum
         })
 
