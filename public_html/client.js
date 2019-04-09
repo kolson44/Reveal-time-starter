@@ -24,7 +24,7 @@ console.log(team);
 //setting the background color based on team choice
 if (team === 'blue') {
   $('.team1').text('TEAM BLUE')
-  $('body').css('background-color', 'blue')
+  $('body').css('background-color', 0, 191, 255)
 
 
 } else if (team === 'pink') {
